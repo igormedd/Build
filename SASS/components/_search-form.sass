@@ -1,0 +1,47 @@
+.search-form
+    display: flex
+    align-items: center
+
+.title-first_search
+    font-size: 22px
+    font-weight: 700
+    letter-spacing: 2px
+    margin-left: 370px
+    padding-top: 35px
+    animation-name: RightToLeft
+    animation-duration: 2s
+    animation-delay: 1s
+    animation-timing-function: easy
+    backface-visibility: hidden
+    transition: all .2s ease
+    &:hover
+        transform: skewY(2deg) skewX(15deg) scale(1.1)
+        color: $color-brown-light
+
+input[type="text"]
+    padding: 8px
+    border-radius: 5px
+    border: 1px solid #979797
+    width: 250px
+    height: 40px
+    margin-left: 90px
+    margin-top: 35px
+
+button
+    padding: 8px 12px
+    width: 150px
+    height: 40px
+    margin-left: 0px
+    margin-top: 34px
+    border-radius: 5px
+    background: $color-blue
+    color: $color-white
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 13px
+    border: none
+    cursor: pointer
+    transition: .2s all ease
+    &:hover
+        background: $color-blue-dark
+

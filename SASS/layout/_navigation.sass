@@ -1,0 +1,37 @@
+.navigation
+    display: flex
+    align-items: center
+    padding-top: 20px
+    margin-bottom: 60px
+    border: 2px solid #E6E6E6
+
+    &__logo2
+        padding-left: 250px
+        transition: all .4s ease
+        &:hover
+            transform: scale(1.1)
+    &__nav
+        margin-left: 200px
+    &__list
+        list-style-type: none
+        margin: 0
+        padding-left: 50px
+    &__item
+        display: inline-block
+        margin-left: 50px
+        &:last-child
+            margin-right: 0        
+    &__link
+        text-decoration: none
+        color: $color-white
+        text-transform: uppercase
+        transition: transform .3s ease
+        color: $color-black
+        font-size: 12px
+        font-weight: 600
+        letter-spacing: 2px
+        cursor: pointer
+        
+        &:hover
+            transform: translateY(-5px)
+            color: #00a4e5

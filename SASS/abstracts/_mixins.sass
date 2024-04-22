@@ -1,0 +1,11 @@
+@mixin style-link($color)
+    text-transform: uppercase
+    text-decoration: none
+    color: $color
+    display: block
+
+@mixin clearfix
+    &::after
+        content: ""
+        display: table
+        clear: both

@@ -1,0 +1,41 @@
+.header
+    position: relative
+    background:  url("../img/header-img.png") center / cover no-repeat
+    height: 95vh
+    display: flex
+    justify-content: center
+
+    &__logo
+        position: absolute
+        align-items: center
+        top: 50px
+        transition: all .4s ease
+        &:hover
+            transform: scale(1.2) scale(1.1)
+
+    &__box
+        position: absolute
+        top: 40%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 100%
+        text-align: center
+
+    &__paragraph
+        position: absolute
+        bottom: 50px
+        left: 44%
+        transform: translateX(-50%)
+        font-size: 14px
+        letter-spacing: 2px 
+        font-weight: 400
+        text-align: center
+        background: $color-blue
+        color: $color-white
+        animation: Bounce 1s infinite, color-change 5s infinite
+        padding: 10px 20px
+        border-radius: 20px
+
+    // &__bounce
+    //     position: absolute
+    //     top: 80%
